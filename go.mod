@@ -1,7 +1,7 @@
 module github.com/bitcoinnanolabs/accept-btco
 
 go 1.18
-
+//test
 require (
 	github.com/bitcoinnanolabs/ed25519-blake2b v1.0.0
 	github.com/cenkalti/log v1.0.0
