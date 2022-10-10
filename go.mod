@@ -3,7 +3,7 @@ module github.com/bitcoinnanolabs/accept-btco
 go 1.18
 //test
 require (
-	github.com/bitcoinnanolabs/ed25519-blake2b v1.0.0
+	github.com/bitcoinnanolabs/ed25519 v1.0.0
 	github.com/cenkalti/log v1.0.0
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gorilla/websocket v1.4.2

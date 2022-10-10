@@ -8,7 +8,7 @@ import (
 	"math/big"
 	"strings"
 
-	ed25519 "github.com/bitcoinnanolabs/ed25519-blake2b"
+	ed25519 "github.com/bitcoinnanolabs/ed25519"
 	"github.com/shopspring/decimal"
 	"golang.org/x/crypto/blake2b"
 )
