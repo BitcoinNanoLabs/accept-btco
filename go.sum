@@ -1,7 +1,7 @@
 github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/bitcoinnanolabs/ed25519 v1.0.0 h1:+ukLrnjqNdK011iJyxhVakXiuUEmg1Rk6GHszi4+4t8=
-github.com/bitcoinnanolabs/ed25519 v1.0.0/go.mod h1:v4h3c0AX8gVK6ipwKEUTnRyL1wUEtCQ6Y4x5Ihf29BU=
+github.com/bitcoinnanolabs/ed25519 v1.0.0/go.mod h1:gC/sUS/luhOCS1U4oKQdIB5u79tY6/UjGaaygIG6hdc=
 github.com/cenkalti/log v1.0.0 h1:0SITaDyovlmHFLaV+qenYmDxh8TNgxbJscMyn4W8XWk=
 github.com/cenkalti/log v1.0.0/go.mod h1:Kbz0XnbnTBtcJN8yeRuPW/9SNtP1tx5SwjU+357jKYM=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
