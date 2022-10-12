@@ -6,7 +6,7 @@ services:
     ports:
      - "8080:8080"
     volumes:
-     - "~/accept-btco:/opt/data"
+     - accept-btco:/opt/data
   btco-node:
     image: "bitcoinnanolabs/btco"
     restart: "unless-stopped"
@@ -15,4 +15,9 @@ services:
      - "7075:7075"
      - "7076:7076"
     volumes:
-     - "~:/root"
+     - btco:/root
+
+
+volumes:
+  btco: {}
+  accept-btco: {}

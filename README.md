@@ -31,7 +31,7 @@ The configuration and database are stored at `/opt/data` so you should map that 
 
 #### Standalone
 
-    docker run -d -p 8080:8080 -v ~/accept-btco:/opt/data bitcoinanolabs/acceptbtco
+    docker run -d -p 8080:8080 -v ~/accept-btco:/opt/data bitcoinanolabs/accept-btco
 
 #### Docker Compose
 
@@ -53,7 +53,7 @@ services:
     ports:
      - "7075:7075/udp"
      - "7075:7075"
-     - ":::7076:7076"
+     - "7076:7076"
     volumes:
      - "~:/root"
 ```
