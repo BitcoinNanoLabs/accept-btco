@@ -3,9 +3,9 @@ DatabasePath = "/opt/data/accept-btco.db"
 # Listen to all interfaces (in container) at 8080
 ListenAddress = "0.0.0.0:8080"
 # Your Bitcoin Nano node RPC URL
-NodeURL = "http://api.bitcoinnano.org:7076/"
+NodeURL = "http://btco-node:7076/"
 # The WebSocket URL to your Bitcoin Nano node
-NodeWebsocketURL = "ws://api.bitcoinnano.org:7078"
+NodeWebsocketURL = "ws://btco-node:7078"
 # Set this to your merchant account.
 Account = " btco_1ceojfgti4pom6s4inm1e5pkf1uz5sb34br59ch3by3qnmg6y6z3apb8ids5"
 # CoinMarketCap API key. Available from https://coinmarketcap.com/api/
