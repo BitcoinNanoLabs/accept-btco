@@ -41,14 +41,14 @@ Example configuration with BTCO node:
 version: '3'
 services:
   accept-btco:
-    image: "acceptbtco/acceptbtco"
+    image: "bitcoinnanolabs/accept-btco"
     restart: "unless-stopped"
     ports:
      - "8080:8080"
     volumes:
      - "~/accept-btco:/opt/data"
   node:
-    image: "btcocurrency/btco"
+    image: "bitcoinnanolabs/btco"
     restart: "unless-stopped"
     ports:
      - "7075:7075/udp"
