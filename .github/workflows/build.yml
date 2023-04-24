@@ -6,8 +6,8 @@ on:
       - 'main'
 
 jobs:
-  test:
-    name: Test
+  Build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-go@v2
@@ -37,7 +37,7 @@ jobs:
 
   push-docker:
     name: Push image to Docker Hub
-    needs: test
+    needs: Build
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
