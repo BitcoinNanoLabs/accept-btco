@@ -1,4 +1,4 @@
-# accept-btco
+## accept-btco
 
 Payment gateway for [BTCO](https://bitcoinnano.org)
 
