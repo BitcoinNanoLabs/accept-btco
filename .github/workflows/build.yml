@@ -1,12 +1,9 @@
-
 name: ci
-
 
 on:
   push:
     branches:
       - 'main'
-
 
 jobs:
   test:
@@ -21,7 +18,13 @@ jobs:
 
       - uses: actions/cache@v2
         with:
-          path: ~/go/pkg/mod
+          path: |
+            ~/go/pkg/mod
+            !~/go/pkg/mod/**/*.go
+            !~/go/pkg/mod/**/*.yml
+            !~/go/pkg/mod/**/*.md
+            !~/go/pkg/mod/**/*.json
+            !~/go/pkg/mod/**/*.sh
           key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-go-
@@ -43,10 +46,11 @@ jobs:
         uses: shogo82148/actions-goveralls@v1
         with:
           path-to-profile: covprofile
- 
+
   push-docker:
     name: Push image to Docker Hub
     needs: test
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -55,7 +59,7 @@ jobs:
         id: prep
         run: |
           TAGS="$TAGS,${DOCKER_HUB_IMAGE_NAME}:latest"
-          
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
 
