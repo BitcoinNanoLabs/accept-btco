@@ -16,12 +16,6 @@ jobs:
 
       - uses: actions/checkout@v2
 
-      - uses: actions/cache@v2
-        with:
-          path: ~/go/pkg/mod/cache
-          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-go-
       - name: Get dependencies
         run: go get -v -t -d ./...
 
