@@ -1,3 +1,5 @@
+![CI](https://github.com/bitcoinnanolabs/accept-btco/actions/workflows/build.yml/badge.svg)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/bitcoinnanolabs/accept-btco)
 ## accept-btco
 
 Payment gateway for [BTCO](https://bitcoinnano.org)
